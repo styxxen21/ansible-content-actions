@@ -22,7 +22,7 @@ name: Release collection
         required: false
 jobs:
   release_automation_hub:
-    uses: ansible/ansible-content-actions/.github/workflows/release_ah.yaml@main
+    uses: styxxen21/ansible-content-actions/.github/workflows/release_ah.yaml@main
     with:
       environment: release
     secrets:
