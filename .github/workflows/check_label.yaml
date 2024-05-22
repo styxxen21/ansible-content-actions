@@ -40,11 +40,11 @@ jobs:
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Add issue or pull-request to 'devtools' project
-        env:
-          BOT_PAT: "${{ secrets.BOT_PAT }}"
-        if: env.BOT_PAT != null
-        uses: actions/add-to-project@main
-        with:
-          project-url: "https://github.com/orgs/ansible/projects/86"
-          github-token: "${{ secrets.BOT_PAT }}"
+#      - name: Add issue or pull-request to 'devtools' project
+#        env:
+#          BOT_PAT: "${{ secrets.BOT_PAT }}"
+#        if: env.BOT_PAT != null
+#        uses: actions/add-to-project@main
+#        with:
+#          project-url: "https://github.com/orgs/ansible/projects/86"
+#          github-token: "${{ secrets.BOT_PAT }}"
