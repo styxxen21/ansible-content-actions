@@ -5,7 +5,7 @@ name: Integration
 jobs:
   tox-matrix:
     name: Matrix Integration
-    runs-on: ubuntu-latest
+    runs-on: vcc-azure-ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:

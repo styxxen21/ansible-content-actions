@@ -12,7 +12,7 @@ name: Refresh automation hub token
         required: true
 jobs:
   refresh:
-    runs-on: ubuntu-latest
+    runs-on: vcc-azure-ubuntu-latest
     name: Refresh AH token
     environment: "${{ inputs.environment }}"
     steps:

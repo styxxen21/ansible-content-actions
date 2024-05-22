@@ -5,7 +5,7 @@ name: Ansible sanity
 jobs:
   tox-matrix:
     name: Matrix Sanity
-    runs-on: ubuntu-latest
+    runs-on: vcc-azure-ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,7 +33,7 @@ jobs:
       matrix:
         entry: "${{ fromJson(needs.tox-matrix.outputs.envlist) }}"
     name: "${{ matrix.entry.name }}"
-    runs-on: ubuntu-latest
+    runs-on: vcc-azure-ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
