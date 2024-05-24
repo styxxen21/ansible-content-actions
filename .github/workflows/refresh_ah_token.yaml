@@ -12,7 +12,7 @@ name: Refresh automation hub token
         required: true
 jobs:
   refresh:
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux, hosting-ansible]
     name: Refresh AH token
     environment: "${{ inputs.environment }}"
     steps:
